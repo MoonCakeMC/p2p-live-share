@@ -31,8 +31,9 @@ jobs:
       - name: Build Extension
         run: |
           pnpm install
+          # npm rebuild --update-binary --target=27.2.3 --runtime=electron --dist-url=https://atom.io/download/electron
           pnpm build
-          pnpx @vscode/vsce package --no-dependencies
+          pnpx @vscode/vsce package
 
       - name: Build Go WS Server
         working-directory: ./src/sync/ws/go
