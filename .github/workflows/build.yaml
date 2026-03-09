@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Extension
         run: |
-          pnpm install
+          pnpm install --no-frozen-lockfile
           # npm rebuild --update-binary --target=27.2.3 --runtime=electron --dist-url=https://atom.io/download/electron
           pnpm build
           pnpx @vscode/vsce package
