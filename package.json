@@ -609,6 +609,9 @@
     "y-protocols": "^1.0.7",
     "yjs": "^13.6.29"
   },
+  "bundledDependencies": [
+    "node-pty"
+  ],
   "dependencies": {
     "@antfu/eslint-config": "^7.0.1",
     "@types/node": "^20.19.30",
