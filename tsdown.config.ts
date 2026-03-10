@@ -16,7 +16,7 @@ export default defineConfig([
     format: ['cjs'],
     target: 'node18',
     external: [
-      'vscode', 'node-pty'
+      'vscode'
     ],
     noExternal: (id) => {
       if (id === 'vscode' || id.startsWith('vscode/')) {
