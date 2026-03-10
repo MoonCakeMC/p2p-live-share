@@ -18,6 +18,7 @@ export default defineConfig([
     external: [
       'vscode',
     ],
+    noExternal: ['reactive-vscode', '@vue/reactivity', '@vue/shared'],
     define: {
       'import.meta.env.TARGET': '"node"',
     },

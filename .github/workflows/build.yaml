@@ -26,7 +26,8 @@ jobs:
       - name: Build Extension
         run: |
           pnpm install --no-frozen-lockfile
-          pnpm build
+          # pnpm build
+          npx tsdown src/index.ts --format cjs --target node18 --platform node --no-external reactive-vscode --output dist
           pnpx @vscode/vsce package
 
       - name: Upload Artifacts
