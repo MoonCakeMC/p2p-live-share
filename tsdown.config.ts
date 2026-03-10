@@ -19,7 +19,6 @@ export default defineConfig([
       'vscode',
     ],
     noExternal: [/^((?!vscode).)*$/],
-    bundle: true, // 强制开启打包模式
     define: {
       'import.meta.env.TARGET': '"node"',
     },
