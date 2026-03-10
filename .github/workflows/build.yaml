@@ -26,7 +26,7 @@ jobs:
       - name: Build Extension
         run: |
           pnpm install --no-frozen-lockfile
-          pnpm build --target=es2022
+          pnpm build
           pnpx @vscode/vsce package
 
       - name: Upload Artifacts

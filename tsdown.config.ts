@@ -14,7 +14,7 @@ export default defineConfig([
     entry: ['src/extension.ts'],
     platform: 'node',
     format: ['cjs'],
-    target: 'node22',
+    target: 'node18',
     external: [
       'vscode',
     ],
