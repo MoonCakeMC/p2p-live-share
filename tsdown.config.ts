@@ -18,6 +18,7 @@ export default defineConfig([
     external: [
       'vscode',
     ],
+    nodeExternals: false,
     define: {
       'import.meta.env.TARGET': '"node"',
     },
