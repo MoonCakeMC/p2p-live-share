@@ -569,7 +569,7 @@
     ]
   },
   "scripts": {
-    "build": "tsdown build --target es2022",
+    "build": "tsdown --env.NODE_ENV production --minify --clean",
     "dev": "tsdown --watch ./src --env.NODE_ENV development",
     "typecheck": "tsc --noEmit",
     "vscode:prepublish": "pnpm run build",
