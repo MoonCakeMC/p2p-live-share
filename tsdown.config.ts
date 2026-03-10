@@ -18,7 +18,12 @@ export default defineConfig([
     external: [
       'vscode',
     ],
-    noExternal: [/^((?!vscode).)*$/],
+    noExternal: (id) => {
+      if (id === 'vscode' || id.startsWith('vscode/')) {
+        return false
+      }
+      return true
+    },
     define: {
       'import.meta.env.TARGET': '"node"',
     },
