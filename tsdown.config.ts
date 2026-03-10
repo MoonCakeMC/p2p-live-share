@@ -18,7 +18,8 @@ export default defineConfig([
     external: [
       'vscode',
     ],
-    noExternal: ['reactive-vscode', '@vue/reactivity', '@vue/shared'],
+    noExternal: [true],
+    bundle: true, // 强制开启打包模式
     define: {
       'import.meta.env.TARGET': '"node"',
     },
